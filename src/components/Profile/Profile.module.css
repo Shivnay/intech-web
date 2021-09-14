@@ -1,0 +1,45 @@
+.Profile {
+    width: 47%;
+    margin: 0px auto;
+    display: flex;
+}
+.Icon {
+    width: 70%;
+    margin-right: 30px;
+    align-self: flex-start;
+}
+.Icon img {
+    padding: 5px;
+    border-radius: 100%;
+    border: 3px dashed #273C75;
+    width: 100%;
+}
+.Row {
+    display: flex;
+    width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .Profile {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .Icon {width: 40%;}
+}
+@media only screen and (max-width: 800px) {
+    .Icon {width: 50%;}
+}
+@media only screen and (max-width: 650px) {
+    .Profile {
+        width: 90%;
+        display: block;
+    }
+    .Icon {
+        margin: auto;
+        width: 20%;
+    }
+    .Profile * {text-align: center;}
+}
+@media only screen and (max-width: 500px) {
+    .Icon {width: 35%;}
+}

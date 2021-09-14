@@ -1,0 +1,55 @@
+.Summary {
+    width: 50%;
+    display: flex;
+}
+
+.Icon {
+    width: 20%;
+    margin-right: 20px;
+}
+.Icon img {
+    width: 100%;
+}
+.Discription {width: 70%;}
+.Controls {
+    margin-top: 15px;
+    display: flex;
+}
+.Controls > a {
+    flex: 1;
+    align-self: center;
+}
+.Controls button {
+    width: 200px;
+}
+@media only screen and (max-width: 1000px) {
+    .Summary {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+    }
+    .Summary .Icon,
+    .Summary .Discription {margin: auto;}
+    .Summary .Icon {
+        width: 25%;
+        margin: 20px auto;
+    }
+    .Summary .Discription {width: 90%;}
+}
+@media only screen and (max-width: 800px) {
+    .Summary {margin: 50px auto;}
+    .Summary * {text-align: center;}
+}
+@media only screen and (max-width: 650px) {
+    .Summary {
+        width: 100%;
+        margin: 50px auto;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .Controls {display: block;}
+    .Controls button {
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+}

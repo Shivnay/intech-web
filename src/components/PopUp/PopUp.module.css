@@ -1,0 +1,72 @@
+.Container {
+    background: transparent;
+    position: fixed;
+    width: 350px;
+    border-radius: 5px;
+    opacity: 0;
+    top: 110%;
+    transition: .4s ease-in-out;
+    left: calc(calc(100vw - 350px) / 2);
+    z-index: 12;
+}
+.PopUp {
+    transition: .2s ease-out;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.show {
+    top: 20%;
+    opacity: 1;
+}
+.ClosePopUp {
+    position: relative;
+    width: fit-content;
+    top: -30px;
+    left: 93%;
+    
+}
+    .PopUp > div > button {
+        font-size: 20pt;
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+        text-align: center;
+        font-weight: normal;
+        transition: .2s ease-out;
+        border-radius: 100%;
+        border: none;
+    }
+    .PopUp > div > button:hover {
+        cursor: pointer;
+    }
+    .PopUp > div > button:focus {
+        outline: none;
+    }
+.Cover {
+    width: 100%;
+    margin-top: -50px;
+}
+    .Cover img {
+        width: 100%;
+    }
+.Details {
+    margin: 10px;
+}
+
+/*Theme presets*/
+.dark {background: #2D2D2D;}
+.dark > div > button:hover {
+    background: #dadada;
+}
+.light {background: white;}
+.light > div > button:hover {
+    background: #dadada;
+}
+
+@media only screen and (max-width: 320px) {
+    .Container {
+        width: 260px;
+        left: calc(calc(100vw - 260px) / 2);
+    }
+}

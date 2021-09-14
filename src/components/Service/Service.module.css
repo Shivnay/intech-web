@@ -1,0 +1,58 @@
+.Service {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+}
+.Service-Discription {
+    width: 90%;
+    align-self: center;
+    margin-left: 10px;
+}
+.Icon {
+    width: 20%;
+    height: fit-content;
+    align-self: center;
+    text-align: center;
+    display: flex;
+}
+.Icon p {
+    margin: auto;
+    align-self: center;
+}
+.Title {
+    width: 100%;
+    margin-left: 10px;
+    align-self: center;
+    display: flex;
+}
+/*Icon font presets*/
+.ico-small  {
+    font-size: 25pt;
+}
+.ico-medium  {
+    font-size: 26pt;
+}
+.ico-large {
+    font-size: 29pt;
+}
+/*Theme presets*/
+.dark {color: white;}
+.light {color: black;}
+.cyan-blue {color: #34495E;}
+.purple {color: #673AB7;}
+.blue {color: #3F51B5;}
+.dark-blue {color: #273C75;}
+.magenta-purple {color: #6F1E51;}
+/*Theme presets*/
+.ico-dark {color: white;}
+.ico-light {color: black;}
+.ico-cyan-blue {color: #34495E;}
+.ico-purple {color: #673AB7;}
+.ico-blue {color: #3F51B5;}
+.ico-dark-blue {color: #273C75;}
+.ico-magenta-purple {color: #6F1E51;}
+
+@media only screen and (max-width: 800px) {
+    .Service {margin: 40px 0px;}
+    .Service .Icon {margin-left: auto;}
+}
