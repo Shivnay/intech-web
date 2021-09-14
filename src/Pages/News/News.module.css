@@ -1,0 +1,87 @@
+.Container {
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    transition: .5s ease-out;
+    margin-top: 40px;
+}
+
+.Article {
+    min-height: 500px;
+    width: 90%;
+    padding: 0px 5%;
+    background: transparent;
+    padding-bottom: 10px;
+    margin: auto;
+}
+    .Loading {
+        position: relative;
+        top: 40%;
+        
+    }
+    /*Theme presets*/
+.dark {background-color: #1B1B1B;}
+.light {background-color: white;}
+    .Header {
+        height: 450px;
+    }
+    .Title {
+        width: 75%;
+        margin: auto;
+        margin-top: 30px;
+    }
+        .Title h1 {
+            font-size: 22pt;
+            
+        }
+    .Author {
+        display: flex;
+        width: fit-content;
+        height: 50px;
+        margin-left: calc(calc(100% - 75%) / 2);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+        .Author .Profile {
+            width: 50px;
+            height: 50px;
+            align-self: center;
+            border-radius: 100%;
+        }
+        .Author .Author-Details {
+            height: 100%;
+            width: fit-content;
+            margin: auto;
+            margin-left: 20px;
+            align-self: center;
+        }
+            .Author-Details h1 {
+                margin-top: 0px;
+                font-size: 11pt;
+            }
+            .Author-Details p {
+                color: #7c7c7c;
+                margin-top: 0px;
+                text-transform: capitalize;
+                font-size: 10pt;
+            }
+    .Content {
+        border-top: 1px solid #d6d6d6;
+        width: 75%;
+        margin: auto;
+        padding-top: 50px;
+        margin: auto;
+        margin-top: 10px;
+    }
+        .Content p {
+            font-size: 13pt;
+            line-height: 40px;
+        }
+@media only screen and (max-width: 415px) {
+    .Article {width: 95%;}
+}
+@media only screen and (max-width: 415px) {
+    .Article {width: 95%;}
+}
+@media only screen and (max-width: 500px) {
+    .Header {height: 300px;}
+}

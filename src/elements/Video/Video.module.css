@@ -1,0 +1,73 @@
+.Video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: black;
+    position: relative;
+}
+.Header {
+    position: absolute;
+    display: flex;
+    border-radius: inherit;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transition: .3s ease-out;
+    background: rgba(0, 0, 0, 0.644);
+}
+.Header button {
+    height: 70px;
+    width: 70px;
+    margin: auto;
+    align-self: center;
+    border-radius: 100%;
+    font-size: 12pt;
+    background: transparent;
+}
+.Header button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/*Theme Presets*/
+.default button {
+    border: 2px solid #252525;
+    color: #252525;
+}
+.darkslategray button {
+    border: 2px solid #5f87af;
+    color: #5f87af;
+}
+.docked {opacity: 0;}
+.docked:hover {opacity: unset;}
+.undocked {opacity: unset;}
+
+/*Font presets*/
+.small {
+    width: 300px;
+    height: 250px;
+}
+.medium {
+    width: 400px;
+    height: 350px;
+}
+.large {
+    width: 500px;
+    height: 450px;
+}
+
+.Video iframe,
+.Video video {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+}
+video:focus,
+button:focus {
+    outline: none;
+}

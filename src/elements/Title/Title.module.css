@@ -1,0 +1,16 @@
+.Title {
+    margin: 5px 0px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+/*Theme presets*/
+.light {color: black;}
+.dark {color: white;}
+/*Font Size Presets*/
+.small {font-size: 14pt;}
+.medium {font-size: 16pt;}
+.large {font-size: 20pt;}
+.x-large {font-size: 22pt;}
+/*alignment presets*/
+.align-default {text-align: start;}
+.align-center {text-align: center;}

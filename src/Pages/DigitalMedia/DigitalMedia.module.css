@@ -1,0 +1,28 @@
+.DigitalMedia {
+    transition: .5s ease-out;
+    padding-bottom: 10px;
+}
+/*Theme presets*/
+.dark {background-color: #1B1B1B;}
+.light {background-color: white;}
+.Pricing {
+    width: 80%;
+    transition: inherit;
+    margin: auto;
+    padding: 50px 0px;
+}
+.Container {
+    transition: inherit;
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+}
+.Container * {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1080px) {
+    .Pricing {width: 90%;}
+}

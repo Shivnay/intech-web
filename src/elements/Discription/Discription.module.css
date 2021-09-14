@@ -1,0 +1,17 @@
+.Discription {
+    margin: 10px 0px;
+}
+.Discription::first-letter {text-transform: capitalize;}
+/*Theme presets*/
+.dark {color: #c2c2c2;}
+.light {color: black;} 
+/*Font Size Presets*/
+.small {font-size: 12pt;}
+.medium {font-size: 13pt;}
+.large {font-size: 14pt;}
+.x-large {font-size: 15pt;}
+/*Style presets*/
+.style-italic {font-style: italic;}
+/*alignment presets*/
+.align-default {text-align: start;}
+.align-center {text-align: center;}

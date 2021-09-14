@@ -1,0 +1,41 @@
+.Button {
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: .2s ease-out;
+    text-transform: capitalize;
+}
+.Button a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+.Button:focus {outline: none;}
+.default-animation:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.no-animation:hover {cursor: pointer;}
+/*Theme Presets*/
+.black {background: black;}
+.purple {background: #673AB7;}
+.blue {background: #3F51B5;}
+.dark-blue {background: #273C75;}
+.magenta-purple {background: #6F1E51;}
+/*Font Size Presets*/
+.small {
+    font-size: 10pt;
+    padding: 10px;
+}
+.medium {
+    font-size: 13pt;
+    padding: 14px;
+}
+.large {
+    font-size: 13pt;
+    padding: 15px;
+}
+.x-large {
+    font-size: 17pt;
+    padding: 19px;
+}

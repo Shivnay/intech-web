@@ -1,0 +1,23 @@
+.Link:hover {
+    cursor: pointer;
+}
+p * {
+    color: inherit;
+    text-decoration: inherit;
+}
+/*Style Presets*/
+.underline {text-decoration: underline;}
+.no-underline {text-decoration: none;}
+/*Font presets*/
+.small {font-size: 12pt;}
+.medium {font-size: 14pt;}
+.large {font-size: 13pt;}
+.x-large {font-size: 14pt;}
+/*Theme presets*/
+.dark {color: white;}
+.light {color: black;}
+.cyan-blue {color: #34495E;}
+.purple {color: #673AB7;}
+.blue {color: #3F51B5;}
+.dark-blue {color: #273C75;}
+.magenta-purple {color: #6F1E51;}

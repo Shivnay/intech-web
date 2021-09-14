@@ -1,0 +1,27 @@
+.Social-Media-Platform {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    color: #273C75;
+    width: 50px;
+    height: 50px;
+    transition: .2s ease-out;
+    border-radius: 100%;
+    border: 1px solid #273C75;
+}
+.Social-Media-Platform:hover {
+    background: #273C75;
+    color: white;
+    cursor: pointer;
+}
+
+.Social-Media-Platform a {
+    text-decoration: none;
+    color: inherit;
+    margin: auto;
+    align-self: center;
+}
+
+.small {font-size: 12pt;}
+.medium {font-size: 13pt;}
+.large {font-size: 15pt;}

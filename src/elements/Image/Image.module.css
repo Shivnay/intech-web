@@ -1,0 +1,25 @@
+.Container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+    .LoadingContainer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        align-self: center;
+        background-color: transparent;
+        display: flex;
+    }
+        .loading { background-color: rgba(128, 128, 128, 0.11);}
+        .LoadingContainer > div {
+            margin: auto;
+            align-self: center;
+        }
+    .Container img {
+        width: 100%;
+        height: 100%;
+    }

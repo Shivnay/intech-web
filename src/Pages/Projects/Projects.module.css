@@ -1,0 +1,37 @@
+.Container {
+    padding-bottom: 10px;
+    transition: .5s ease-out;
+    height: fit-content;
+    background: transparent;
+}
+/*Theme presets*/
+.dark {background-color: #1B1B1B;}
+.light {background-color: white;}
+
+.Header {
+    width: fit-content;
+    margin: auto;
+}
+
+.Collection {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    min-height: 300px;
+}
+.Loading {
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .Collection {
+        display: block;
+    }
+    .Collection div {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}

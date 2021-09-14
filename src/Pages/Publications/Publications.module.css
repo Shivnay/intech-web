@@ -1,0 +1,17 @@
+.Container {
+    transition: .5s ease-out;
+    height: 70vh;
+    display: flex;
+}
+.NoPublication {
+    margin: auto;
+    align-self: center;
+    text-align: center;
+}
+.NoPublication * {
+    margin-top: 20px;
+    text-align: center;
+}
+/*Theme presets*/
+.dark {background-color: #1B1B1B;}
+.light {background-color: white;}
