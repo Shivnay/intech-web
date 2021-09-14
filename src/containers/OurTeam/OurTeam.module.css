@@ -1,0 +1,28 @@
+.Executives {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    transition: .5s ease-out;
+    -webkit-box-shadow: 0px 0px 5px #00000040;
+            box-shadow: 0px 0px 5px #00000040;
+}
+
+.dark  {background: #2D2D2D;}
+.light  {background: white;}
+
+.Row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 30px 0px;
+}
+@media only screen and (max-width: 1080px) {
+    .Executives {width: 90%;}
+}
+@media only screen and (max-width: 1000px) {
+    .Row {display: block;}
+}
