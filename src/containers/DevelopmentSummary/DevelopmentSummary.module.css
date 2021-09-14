@@ -1,0 +1,91 @@
+.Container {
+    padding: 50px 0px 50px 0px;
+    transition: .5s ease-out;
+    background-image: url('../../assets/development-vector.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Theme presets*/
+.dark {background-color: #1B1B1B;}
+.light {background-color: white;}
+.dark .Services,
+.dark .Cloud-Services {background: #2D2D2D;}
+.light .Services,
+.light .Cloud-Services {background: white;}
+
+.Header,
+.Services,
+.Cloud-Services {
+    width: 80%;
+    margin: auto;
+    align-self: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: inherit;
+    box-shadow: 0px 0px 5px #00000040;
+}
+.Header {
+    background: transparent;
+    box-shadow: unset;
+    display: flex;
+}
+.Services,
+.Cloud-Services {margin-top: 20px;}
+.Intro {
+    width: 45%;
+    margin: auto;
+}
+.Services-Container {
+    width: 100%;
+    display: block;
+    margin: 30px auto;
+}
+.Row {
+    display: flex;
+    width: 100%;
+    margin: 30px 0px;
+}
+.Services-Container > div span {font-size: 17pt;}
+.Intro .Controls {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+.Vector {
+    width: 40%;
+    height: 300px;
+    margin: auto;
+    align-self: center;
+    transition: .5s ease-out;
+    opacity: 0;
+    transform: scale(1.4);
+}
+.Vector img {width: 100%;}
+.animate-vector {
+    padding-top: 20px;
+    opacity: 1;
+}
+.Growth-Vector, 
+.Graph-Vector {
+    width: 350px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .Services,
+    .Header,
+    .Cloud-Services {width: 90%;}
+}
+
+@media only screen and (max-width: 1000px) {
+    .Vector {display: none;}
+    .Intro {width: 80%;}
+}
+@media only screen and (max-width: 800px) {
+    .Row {
+        display: block;
+        margin: 0px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .Intro {width: 100%;}
+}

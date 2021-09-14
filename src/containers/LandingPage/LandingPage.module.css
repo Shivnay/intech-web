@@ -1,0 +1,57 @@
+.LandingPage {
+    height: 100vh;
+    background: #F2C617 url('../../assets/banner-cover.png') no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    display: flex;
+    overflow: hidden;
+}
+
+.vector {
+    width: 700px;
+    position: relative;
+    top: 40%;
+    left: 11%;
+    transition: .8s ease-out;
+    filter: drop-shadow(0px 10px 10px black);
+    transition-delay: .5s;
+}
+
+.vector-animation {
+    filter: drop-shadow(0px 40px 15px black);
+    top: 30%;
+}
+.Banner {
+    width: 400px;
+    color: black;
+    background: transparent;
+    align-self: center;
+    margin-left: 10%;
+}
+
+.Banner h1 {
+    font-size: 20pt;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.Banner h2 {
+    font-size: 15pt;
+    font-weight: normal;
+    margin: 20px 0px;
+}
+    .Banner h2 span {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+@media only screen and (max-width: 1080px) {
+    .Banner {
+        margin: auto;
+        text-align: center;
+    }
+    .LandingPage {
+        margin: auto;
+    }
+    .vector {display: none;}
+}

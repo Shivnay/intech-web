@@ -1,0 +1,30 @@
+.News {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    background: transparent;
+}
+.Cover {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;    
+    border-radius: 5px;
+}
+.Cover img {
+    width: 100%;
+}
+/*Theme presets*/
+.dark {color: white;}
+.light {color: black;}
+/*Theme presets*/
+.dark p {color: #a8a8a8;}
+.light p {color: #6b6b6b;}
+
+@media only screen and (max-width: 1025px) {
+    .News {width: 60%;}
+}
+@media only screen and (max-width: 650px) {
+    .Cover {width: 240px;}
+    .News {width: 90%;}
+}

@@ -1,0 +1,9 @@
+.App {
+    padding-top: 10vh;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    transition: .5s ease-out;
+}
+
+.dark {background: #1B1B1B;}
+.light {background: white;}

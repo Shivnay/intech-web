@@ -1,0 +1,116 @@
+.Container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transition: .5s ease-out;
+}
+    .show-container {visibility: visible;}
+    .hide-container {visibility: hidden;}
+    .Overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    .show-overlay {background-color: #29292975;}
+    .hide-overlay {background-color: transparent;}
+
+    .Modal-Controls {
+        position: relative;
+        width: 40px;
+        right: calc(60% - 40px);
+        top: 5%;
+        z-index: 6;
+    }
+        .Control {
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            font-size: 13pt;
+            margin-top: 20px;
+            transition: .3s ease-out;
+            transition-delay: .3s;
+        }
+        .Control:first-child {
+            color: #008134;
+            border: 2px solid #008134;
+        }
+            .Control:first-child:hover {
+                background: #008134;
+                color: white;
+            }
+        .show-control {
+            transform: scale(1)
+        }
+        .hide-control {
+            transform: scale(0)
+        }
+    .Modal {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35%;
+        height: 100%;
+        background: white;
+        box-shadow: 0px 0px 30px rgba(70, 70, 70, 0.329);
+        transition: .3s ease-out;
+    }   
+        .show-modal {
+            right: 65%;
+        }
+        .hide-modal {
+            right: 100%;
+        }
+        .Modal .Container {
+            width: inherit;
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+            position: relative;
+            width: 100%;
+        }
+            .Modal .Container::-webkit-scrollbar {
+                width: 0px;
+            }
+        .Loading {
+            position: absolute;
+            top: 40%;
+            right: 45%;
+        }
+@media only screen and (max-width: 1200px) {
+    .Modal {width: 40%;}
+    .show-modal { right: 60%; }
+    .hide-modal { right: 100%; }
+    .Modal-Controls {
+        right: 64%;
+        top: 1%;
+        width: 35%;
+        display: flex;
+    }
+    .Control { margin-right: auto; }
+}
+@media only screen and (max-width: 1000px) {
+    .Modal {width: 50%;}
+    .show-modal { right: 50%; }
+    .hide-modal { right: 100%; }
+}
+@media only screen and (max-width: 800px) {
+    .Modal {width: 60%;}
+    .show-modal { right: 40%; }
+    .hide-modal { right: 100%; }
+    .Modal-Controls {
+        width: 60%;
+        right: 39%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .Modal {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .show-modal { right: 0%; }
+    .hide-modal { right: 100%; }
+}
+

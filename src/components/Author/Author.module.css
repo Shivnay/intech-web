@@ -1,0 +1,21 @@
+.Author {
+    margin: 15px 0px;
+    display: flex;
+}
+.Profile {
+    width: 60px;
+    height: 60px;
+    border: 2px dashed #3856a8;
+    border-radius: 100%;
+    padding: 4px;
+}
+.Profile img {
+    width: 100%;
+    height: 100%;
+}
+.Author-Details {
+    margin-left: 10px;
+}
+.Author-Details > p{
+    margin: 5px;
+}

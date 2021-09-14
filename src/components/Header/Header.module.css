@@ -1,0 +1,210 @@
+.header {
+    height: 10vh;
+    width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    position: fixed;
+    -webkit-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    transition: .3s ease-out;
+    z-index: 10;
+  }
+  
+  .header-show {top: 0px;}
+  .header-hide {top: -13vh;}
+  /*Theme presets*/
+  .initial {
+    background: transparent;
+    box-shadow: none;
+  }
+  .light {
+    background: white;
+    color: black;
+    box-shadow: 0px 0px 5px #cfcfcf;
+  }
+  .dark {
+    background: #1B1B1B;
+    color: white;
+    box-shadow: 0px 0px 5px #1B1B1B;
+  }
+  .on-menu-active {
+    box-shadow: unset;
+    background: transparent;
+    color: white;
+  }
+  nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  
+  .menu, .Toolbar {
+    height: 35px;
+    width: 40px;
+    padding: 5px;
+    font-size: 17pt;
+    color: inherit;
+    align-self: center;
+    text-align: center;
+    background: transparent;
+    border: none;
+    transition: .1s ease-out;
+    display: none;
+  }
+  .menu { z-index: 14;}
+
+  .Toolbar {margin-left: 15px;}
+  .menu:focus,
+  .Toolbar:focus {outline: none;}
+  .menu:hover,
+  .Toolbar:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  .header .App-logo {
+    align-self: center;
+    width: 30px;
+  }
+    .App-logo img {
+      width: 100%;
+    }
+  .header button:active,
+  .header button:focus {outline: none;}
+  .header ul {
+    display: flex;
+    height: 40%;
+    margin: auto;
+    margin-left: 50px;
+    list-style: none;
+    align-self: center;
+  }
+    .header ul li {
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      font-size: 11pt;
+      font-weight: normal;
+      margin-right: 20px;
+      padding-bottom: 5px;
+      transition: .5s ease-out;
+      align-self: center;
+    }
+    .header ul li:hover {
+      border-bottom: 1px solid;
+      cursor: pointer;
+    }
+    .header ul li a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .header .App-search {
+      align-self: center;
+      margin-left: auto;
+      height: 35px;
+      display: flex;
+    }
+    .App-search input {
+      color: inherit;
+      font-size: 12pt;
+      height: 70%;
+      background: transparent;
+      text-align: start;
+      transition: .2s ease-out;
+      align-self: center;
+      margin-right: 10px;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+    }
+    .App-search-show {width: 200px;}
+    .dark input {border-bottom: 1px solid white;}
+    .initial input,
+    .light input {border-bottom: 1px solid black;}
+    .App-search-hide {
+      border: none;
+      width: 0px;
+    }
+    .App-search input:focus { outline: none;}
+    .App-search input::placeholder {
+      color: inherit;
+      text-transform: uppercase;
+      font-size: 10pt;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+    .App-search button {
+      font-weight: normal;
+      margin-left: 5px;
+      height: 100%;
+      color: inherit;
+      font-size: 17pt;
+      background: transparent;
+      border: none;
+      border-radius: 5px;
+      transition: .1s ease-out;
+      align-self: center;
+    }
+      .App-search button:focus {outline: none;}
+      .App-search button:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    .insight-portal {
+      width: 170px;
+      display: flex;
+      align-self: center;
+      padding: 5px;
+      margin-left: auto;
+      border-radius: 5px;
+      transition: .2s ease-out;
+    }
+    .initial .insight-portal {border: 1px solid black;}
+    .dark .insight-portal {border: 1px solid #555555;}
+    .light .insight-portal {border: 1px solid #bebebe;}
+    .insight-portal img {
+      height: 30px;
+      width: 15px;
+      margin: auto;
+    }
+    .insight-portal h2 {
+      font-size: 12pt;
+      font-weight: normal;
+      margin: auto;
+      align-self: center;
+    }
+      .insight-portal:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+      }
+      
+
+/*Tablet Style*/
+@media only screen and (max-width: 1190px) {
+  .menu {
+    display: unset;
+  }
+
+  .App-logo {
+    margin: auto;
+  }
+
+  .header ul {
+    display: none;
+  }
+  .header .App-search {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .Toolbar {
+    display: unset;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .insight-portal {
+    display: none;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .on-menu-active {width: 50%;}
+}
